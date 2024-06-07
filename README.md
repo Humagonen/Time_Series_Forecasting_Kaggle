@@ -6,23 +6,26 @@ The Dataset is fully dedicated for the developers who want to train the model on
 
 The 4 parameters here are:
 
-meantemp (target)
-humidity
-wind_speed
-meanpressure
+* meantemp (target)
+
+* humidity
+
+* wind_speed
+
+* meanpressure
 
 
-After a detailed EDA process, I decided to continue with the first 3 features for modelling
+After a detailed EDA process, I decided to continue with the first 3 features for modeling
 
 ## Modelling
 
-Experimented more than 6 different time series model and compared them:
+Experimented with more than 6 different time series models and compared them:
 
   1. simple ARIMA (both daily and monthly forecast)
 
   3. simple SARIMA (both daily and monthly forecast)
   
-  5. auto_arima (finds p, q and d automatically - monthly forecast)
+  5. auto_arima (finds p, q, and d automatically - monthly forecast)
   
   7. Prophet (daily forecast)
     
@@ -35,11 +38,11 @@ Experimented more than 6 different time series model and compared them:
 
 ## Results:
 
-1. Deep learning models resulted with the best scores 
+1. Deep learning models resulted in the best scores 
 
-2. ARIMA models in both daily and monthly forecast resulted with very low accuracy, whereas in monthly predictions SARIMA and auto_arima modelling performed better
+2. ARIMA models in both daily and monthly forecasts resulted in very low accuracy, whereas in monthly predictions SARIMA and auto_arima modeling performed better
 
-3. Prophet model got a very high accuracy in daily forecast (but lower than DL models)
+3. The Prophet model got a very high accuracy in the daily forecast (but lower than DL models)
 
 ## Conclusion
 
